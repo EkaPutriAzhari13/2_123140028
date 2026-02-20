@@ -1,7 +1,7 @@
 # Simulator Aliran Berita - Kotlin Multiplatform
 
 **Nama:** Eka Putri Azhari Ritonga (123140028)
-**Mata Kuliah:** Mobile Application Development (Pertemuan ke-2)
+**Mata Kuliah:** Pengembangan Aplikasi Mobile (Pertemuan ke-2)
 
 ## Gambaran Umum
 Proyek ini adalah sebuah aplikasi konsol "News Feed Simulator" yang memanfaatkan kekuatan **Kotlin Coroutines** dan **Kotlin Flow**. Aplikasi ini dirancang untuk menunjukkan bagaimana data dapat diproses secara asinkron dan reaktif dalam ekosistem KMP.
