@@ -17,7 +17,7 @@ Sebuah aplikasi Android modern berbasis **Jetpack Compose** yang dirancang untuk
 - **Animation**: Compose Animation Framework.
 
 ## Tampilan Aplikasi
-![Tampilan Aplikasi](screenshots/TampilanApp.jpg)
+![Tampilan Aplikasi](screenshots/TampilanApp.jpeg)
 
 **Informasi Profil:**
 - **Nama**: Eka Putri Azhari Ritonga
