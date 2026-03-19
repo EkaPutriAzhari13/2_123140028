@@ -1,6 +1,6 @@
-# Repository Tugas Pemrograman Mobile - Eka Putri 📱
+# Repository Tugas Pengembangan Aplikasi Mobile - Eka Putri 📱
 
-Repository ini saya gunakan untuk menyimpan seluruh progres tugas mata kuliah Pemrograman Mobile. Di sini saya belajar membangun aplikasi Android menggunakan **Kotlin** dan **Jetpack Compose**, mulai dari logika dasar sampai desain UI yang lebih kompleks.
+Repository ini saya gunakan untuk menyimpan seluruh progres tugas mata kuliah Pengembangan aplikasi Mobile. Di sini saya belajar membangun aplikasi Android menggunakan **Kotlin** dan **Jetpack Compose**, mulai dari logika dasar sampai desain UI yang lebih kompleks.
 
 ---
 
