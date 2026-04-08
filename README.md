@@ -27,6 +27,20 @@ Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan ya
   - **Profile Strength**: Indikator (Progress Bar) yang menghitung seberapa lengkap saya mengisi data profil.
   - **Full Edit Mode**: Semua data profil (Bio, Email, HP, Lokasi) bisa diubah dan disimpan lewat ViewModel.
 
+### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5 - Terbaru)
+**Fokus: Navigation, State Management & CRUD**
+Pada tugas ini, saya mengembangkan aplikasi catatan dengan navigasi yang lebih kompleks serta pengelolaan data secara dinamis.
+- **Isi Proyek**: Aplikasi Notes dengan multi-screen menggunakan **Jetpack Compose Navigation**.
+- **Fitur Utama**:
+  - **Navigation System**: Menggunakan `Sealed Class` untuk routing yang terstruktur dan *type-safe*
+  - **Bottom Navigation**: Navigasi antar halaman (Home, Favorites, Profile) dengan *state preservation*
+  - **CRUD Notes**:
+    - Create → Menambah catatan (`AddNoteScreen`)
+    - Read → Menampilkan daftar & detail catatan (`NoteDetailScreen`)
+    - Update → Edit catatan (`EditNoteScreen`)
+  - **State Management**: Menggunakan `mutableStateListOf` untuk sinkronisasi data real-time
+  - **UI Modern**: Material 3 dengan custom component, gradient, dan desain kartu estetik
+
 ---
 
 ## ⚙️ Cara Menjalankan Tugas
@@ -38,7 +52,7 @@ Kalau ingin mencoba menjalankan kodenya:
 
 ---
 
-**Identitas Mahasiswa:**
+## 👤 Identitas Mahasiswa
 - **Nama**: Eka Putri Azhari Ritonga
 - **NIM**: 123140028
 - **Prodi**: Teknik Informatika - ITERA
