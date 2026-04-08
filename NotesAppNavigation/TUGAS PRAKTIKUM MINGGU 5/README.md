@@ -1,54 +1,64 @@
+# 📝 Notes App Navigation
 
-https://github.com/user-attachments/assets/4f5cb416-5dab-4b38-9615-441c301a613a
-# Notes App Navigation 📝
-
-Project ini adalah aplikasi catatan modern yang dibangun menggunakan **Jetpack Compose**. Aplikasi ini tidak hanya mendemonstrasikan sistem navigasi, tetapi juga implementasi UI yang estetik dan pengelolaan data dinamis menggunakan State di Android.
-
-## Fitur Utama & Pembelajaran
-
-### 1. Navigasi Lanjutan & Arsitektur
-- **Sealed Class Routes**: Penggunaan `Screen` dan `BottomNavItem` untuk rute navigasi yang terpusat dan *type-safe*.
-- **Bottom Navigation**: Sistem tab menu (Home, Favorites, Profile) dengan manajemen *backstack* yang dioptimasi (`saveState`, `restoreState`).
-- **Dynamic Navigation**: Berpindah antar layar sambil membawa data (`noteId`) melalui `navArgument`.
-
-### 2. Pengelolaan Data Dinamis (State Management - Full CRUD)
-- **Create**: Menambah catatan baru melalui `AddNoteScreen` dengan auto-increment ID.
-- **Read**: Menampilkan daftar catatan dinamis di Home dan Favorites, serta detail lengkap di `NoteDetailScreen`.
-- **Update**: Mengubah isi catatan (Judul, Deskripsi, Konten, Reminder) melalui `EditNoteScreen`.
-- **State Handling**: Menggunakan `mutableStateListOf` agar sinkronisasi data terjaga di seluruh layar secara *real-time*.
-
-### 3. UI Estetik & Material 3
-- **Custom Components**: `NoteItem` dengan desain kartu kustom, ikon notifikasi, dan indikator status.
-- **Visual Polish**: Penggunaan *Gradient Background*, *Tonal Elevation*, dan *Custom Shapes* untuk tampilan yang lebih modern.
-- **Profile UI**: Tampilan profil dengan foto, tombol edit, dan kartu informasi detail NIM.
-
-## Tampilan Aplikasi
-
-### Video Demo
-https://github.com/user-attachments/assets/bcd28b21-7f17-48f0-a328-514772f807e5
-
-
-### Screenshot
-| Home / Notes                    | Detail Note                       |
-|---------------------------------|-----------------------------------|
-| ![Notes](screenshot/Notes.jpeg) | ![Detail](screenshot/Detail.jpeg) |
-
-| Favorites                               | Profile                             |
-|-----------------------------------------|-------------------------------------|
-| ![Favorites](screenshot/Favorites.jpeg) | ![Profile](screenshot/Profile.jpeg) |
-
-## Struktur Layar
-- **Home (My Daily Notes)**: Daftar catatan interaktif dengan ringkasan tugas dan status favorit.
-- **Note Detail**: Layar detail dengan tampilan kartu lebar, informasi reminder, dan isi konten yang unik tiap catatan.
-- **Favorites**: Menampilkan koleksi catatan yang disukai, lengkap dengan fitur klik untuk melihat detail.
-- **Profile**: Informasi pengguna dengan layout yang rapi dan fungsional.
-
-## Teknologi yang Digunakan
-- **Jetpack Compose**: Untuk membangun UI deklaratif.
-- **Compose Navigation**: Library utama untuk perpindahan antar layar.
-- **Material 3**: Menggunakan standar desain terbaru dari Google.
-- **Kotlin State & Models**: Untuk logika data yang dinamis.
+Aplikasi catatan modern berbasis **Jetpack Compose** yang menampilkan sistem navigasi, UI estetik, serta pengelolaan data dinamis menggunakan State di Android.
 
 ---
-**Oleh:**
-- Eka Putri Azhari Ritonga (123140028)
+
+## 🚀 Fitur Utama
+
+### 🔹 Navigasi & Arsitektur
+- Menggunakan `Sealed Class` (`Screen`, `BottomNavItem`) untuk navigasi yang terpusat dan *type-safe*
+- Bottom Navigation (Home, Favorites, Profile) dengan pengelolaan *backstack* (`saveState`, `restoreState`)
+- Navigasi dinamis dengan pengiriman data (`noteId`) melalui `navArgument`
+
+### 🔹 State Management (CRUD)
+- **Create** → Menambah catatan melalui `AddNoteScreen`
+- **Read** → Menampilkan catatan di Home, Favorites, dan `NoteDetailScreen`
+- **Update** → Mengedit catatan melalui `EditNoteScreen`
+- Sinkronisasi data secara real-time dengan `mutableStateListOf`
+
+### 🔹 UI & Design (Material 3)
+- Komponen kustom `NoteItem` dengan desain kartu modern
+- Tampilan visual menggunakan Gradient, Tonal Elevation, dan Custom Shapes
+- Halaman Profile dengan foto, tombol edit, dan informasi NIM
+
+---
+
+## 🎥 Demo
+https://github.com/user-attachments/assets/bcd28b21-7f17-48f0-a328-514772f807e5
+
+---
+
+## 📸 Screenshot
+
+### Home & Detail
+| Home | Detail |
+|------|--------|
+| ![Notes](screenshot/Notes.jpeg) | ![Detail](screenshot/Detail.jpeg) |
+
+### Favorites & Profile
+| Favorites | Profile |
+|----------|---------|
+| ![Favorites](screenshot/Favorites.jpeg) | ![Profile](screenshot/Profile.jpeg) |
+
+---
+
+## 🧩 Struktur Layar
+- **Home (My Daily Notes)** → Daftar catatan interaktif + status favorit  
+- **Note Detail** → Detail catatan + informasi reminder  
+- **Favorites** → Daftar catatan yang disukai  
+- **Profile** → Informasi pengguna  
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+- **Jetpack Compose** → UI deklaratif modern  
+- **Compose Navigation** → Navigasi antar layar  
+- **Material 3** → Desain UI terbaru dari Google  
+- **Kotlin (State & Models)** → Pengelolaan data dinamis  
+
+---
+
+## 👤 Author
+**Eka Putri Azhari Ritonga**  
+NIM: 123140028
