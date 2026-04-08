@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/4f5cb416-5dab-4b38-9615-441c301a613a
 # Notes App Navigation 📝
 
 Project ini adalah aplikasi catatan modern yang dibangun menggunakan **Jetpack Compose**. Aplikasi ini tidak hanya mendemonstrasikan sistem navigasi, tetapi juga implementasi UI yang estetik dan pengelolaan data dinamis menggunakan State di Android.
@@ -23,7 +25,8 @@ Project ini adalah aplikasi catatan modern yang dibangun menggunakan **Jetpack C
 ## Tampilan Aplikasi
 
 ### Video Demo
-https://github.com/user-attachments/assets/6300f394-8208-40b1-a16c-41ffd449e1d6
+https://github.com/user-attachments/assets/bcd28b21-7f17-48f0-a328-514772f807e5
+
 
 ### Screenshot
 | Home / Notes                    | Detail Note                       |
@@ -48,4 +51,4 @@ https://github.com/user-attachments/assets/6300f394-8208-40b1-a16c-41ffd449e1d6
 
 ---
 **Oleh:**
-- Nahli Saud Ramdani (123140049)
+- Eka Putri Azhari Ritonga (123140028)
