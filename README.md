@@ -18,7 +18,7 @@ Proyek awal untuk mengenal komponen dasar di Jetpack Compose.
 - **Isi Proyek**: Tampilan profil sederhana dengan informasi statis.
 - **Fitur**: Menampilkan foto profil, nama, dan detail kontak dasar.
 
-### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4 - Terbaru)
+### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4 )
 **Fokus: Modern UI (Glassmorphism) & MVVM**
 Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan yang jauh lebih niat dan rapi.
 - **Isi Proyek**: Implementasi desain **Glassmorphism** dengan latar belakang **Aurora Gradient**.
@@ -27,7 +27,7 @@ Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan ya
   - **Profile Strength**: Indikator (Progress Bar) yang menghitung seberapa lengkap saya mengisi data profil.
   - **Full Edit Mode**: Semua data profil (Bio, Email, HP, Lokasi) bisa diubah dan disimpan lewat ViewModel.
 
-### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5 - Terbaru)
+### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5 )
 **Fokus: Navigation, State Management & CRUD**
 Pada tugas ini, saya mengembangkan aplikasi catatan dengan navigasi yang lebih kompleks serta pengelolaan data secara dinamis.
 - **Isi Proyek**: Aplikasi Notes dengan multi-screen menggunakan **Jetpack Compose Navigation**.
