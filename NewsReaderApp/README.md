@@ -22,9 +22,9 @@ NewsReaderApp adalah aplikasi pembaca berita berbasis Android yang dikembangkan 
 
 ## 📸 Screenshots
 
-|                  Home                   |                       Detail                        | Browser |
-|:---------------------------------------:|:---------------------------------------------------:| :---: |
-| ![Home Page](Screenshot/Home Page.jpeg) | ![Detail Tampilan](Screenshot/Detail Tampilan.jpeg) | ![Browser](Screenshot/Browser.jpeg) |
+| Home | Detail | Browser |
+|------|--------|---------|
+| ![Home](Screenshot/home_page.jpeg) | ![Detail](Screenshot/detail_tampilan.jpeg) | ![Browser](Screenshot/browser.jpeg) |
 
 ## 🔌 API & Data
 Aplikasi ini menerapkan Repository Pattern dengan pendekatan Local-First:
