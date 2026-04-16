@@ -1,38 +1,32 @@
-# 📝 Notes App Pro - Praktikum Minggu 7
+# Notes App Pro - Tugas Praktikum Minggu 7 📝
 
-Notes App Pro adalah aplikasi pencatatan berbasis Android yang dikembangkan sebagai bagian dari tugas praktikum minggu ke-7. Aplikasi ini dirancang dengan pendekatan *offline-first*, sehingga data tetap dapat diakses tanpa koneksi internet, serta dilengkapi fitur pencarian, pengaturan preferensi, dan tampilan modern.
+Aplikasi **Notes App** versi upgrade yang dioptimasi untuk **Tugas Praktikum Minggu 7**. Project ini mendemonstrasikan implementasi database lokal menggunakan **SQLDelight**, manajemen preferensi dengan **DataStore**, serta fitur pencarian dan sinkronisasi data.
 
-## 📌 Gambaran Umum
-Aplikasi ini memungkinkan pengguna untuk mengelola catatan dengan mudah, mulai dari menambahkan, mengedit, hingga menghapus data. Selain itu, tersedia juga fitur pencarian cepat, pengelompokan favorit, serta pengaturan tampilan sesuai preferensi pengguna.
+## Fitur Utama & Pembelajaran (Upgrade Minggu 7)
 
-## 🚀 Fitur Utama
+### 1. SQLDelight Database (Offline-First) 💾
+- **Persistensi Data**: Catatan tersimpan secara lokal di SQLite melalui SQLDelight.
+- **Full CRUD**: Implementasi lengkap Operasi Create, Read, Update, dan Delete.
+- **Type-Safe Queries**: Penggunaan generator kode SQLDelight untuk query yang aman.
 
-### 💾 Penyimpanan Data (SQLDelight)
-- Data disimpan secara lokal menggunakan SQLite melalui SQLDelight.
-- Mendukung operasi CRUD (Create, Read, Update, Delete).
-- Query lebih aman karena menggunakan pendekatan type-safe.
+### 2. Fitur Pencarian & Sortir 🔍
+- **Real-time Search**: Mencari catatan berdasarkan judul atau isi konten dengan fitur *debounce* (300ms) untuk performa optimal.
+- **Custom Sorting**: Pengguna dapat memilih urutan catatan (Terbaru/Terlama) yang disimpan melalui DataStore.
 
-### 🔍 Pencarian & Pengurutan
-- Pencarian catatan dapat dilakukan secara real-time.
-- Menggunakan sistem *debounce* untuk menjaga performa tetap optimal.
-- Tersedia opsi pengurutan (terbaru / terlama) sesuai kebutuhan pengguna.
+### 3. Settings dengan Jetpack DataStore ⚙️
+- **Theme Persistence**: Pengaturan *Dark Mode* yang tersimpan secara permanen.
+- **Preference Storage**: Menggunakan DataStore Preferences untuk performa yang lebih baik dibanding SharedPreferences.
 
-### ⚙️ Pengaturan Pengguna (DataStore)
-- Mendukung perubahan tema (Light / Dark Mode).
-- Preferensi disimpan menggunakan Jetpack DataStore.
-- Pengaturan tetap tersimpan meskipun aplikasi ditutup.
+### 4. UI States & UX Lanjutan ✨
+- **Proper States**: Penanganan kondisi *Loading* (Circular Progress), *Empty* (Tampilan khusus saat data kosong), dan *Content*.
+- **Date & Time Picker**: Input reminder menggunakan dialog kalender dan waktu sistem yang intuitif.
+- **Clean UI**: Tampilan modern menggunakan Material 3 dengan responsivitas tinggi.
 
-### ✨ Tampilan & Interaksi
-- Menangani berbagai state seperti loading, empty, dan content.
-- Input reminder menggunakan date picker dan time picker.
-- UI modern berbasis Material 3 yang responsif.
+### 5. Bonus: Remote API Sync 🌐
+- **Ktor Integration**: Boilerplate integrasi Ktor Client untuk sinkronisasi data dengan API eksternal.
 
-### 🌐 Integrasi API (Opsional)
-- Menggunakan Ktor Client sebagai dasar koneksi ke API eksternal.
-- Dapat dikembangkan untuk sinkronisasi data online.
-
-## 🗄️ Struktur Database
-
+## Database Schema (SQLDelight)
+Berikut adalah skema tabel yang digunakan dalam project ini:
 ```sql
 CREATE TABLE noteEntity (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -40,39 +34,45 @@ CREATE TABLE noteEntity (
     description TEXT NOT NULL,
     content TEXT NOT NULL,
     reminder TEXT NOT NULL,
-    isFavorite INTEGER NOT NULL DEFAULT 0,
+    isFavorite INTEGER NOT NULL DEFAULT 0, -- 0: False, 1: True
     createdAt INTEGER NOT NULL DEFAULT 0
 );
-## 📸 Tampilan Aplikasi
+```
 
-### 🎥 Demo Video
-*(Silakan tambahkan link video demo berdurasi ±45 detik di bagian ini)*
+## Tampilan Aplikasi
 
-### Preview (Update Minggu 7)
-| Halaman Utama & Pencarian | Pengaturan (Dark Mode) |
-| :---: | :---: |
-| ![Notes](screenshot/Notes_Search.jpg) | ![Settings](screenshot/Settings_Dark.jpeg) |
+### Video Demonstrasi
+https://github.com/user-attachments/assets/800cb344-e015-4b17-8fc5-84f9a6f04707
 
-| Daftar Favorit | Tambah Catatan (Date & Time Picker) |
-| :---: | :---: |
-| ![Favorites](screenshot/Favorites_New.jpg) | ![Add](screenshot/Add_Picker.jpg) |
+### Screenshot Update (Minggu 7)
 
-## 🧭 Navigasi Halaman
-- **Home** → Menampilkan seluruh catatan lengkap dengan fitur pencarian dan favorit.
-- **Settings** → Digunakan untuk mengatur tema serta urutan tampilan data.
-- **Favorites** → Berisi kumpulan catatan yang telah ditandai sebagai favorit.
-- **Profile** → Menampilkan informasi pengguna.
-- **Add/Edit Note** → Form untuk menambahkan atau mengedit catatan, termasuk pengaturan tanggal dan waktu.
+| Home Screen | Detail Notes | Add Notes |
+|:---:|:---:|:---:|
+| ![Home](screenshot/Home%20Screen.jpeg) | ![Detail](screenshot/Detail%20Notes.jpeg) | ![Add](screenshot/AddNotes.jpeg) |
 
-## 🛠️ Teknologi
-- SQLDelight sebagai database lokal
-- Jetpack DataStore untuk menyimpan preferensi pengguna
-- Ktor Client untuk kebutuhan komunikasi API (opsional)
-- Jetpack Compose untuk membangun tampilan UI
-- Navigation Compose untuk pengelolaan navigasi
-- Material 3 sebagai standar desain antarmuka
+| Edit Notes | Settings | Dark Favorites |
+|:---:|:---:|:---:|
+| ![Edit](screenshot/EditNotes.jpeg) | ![Settings](screenshot/Settings.jpeg) | ![DarkFavorite](screenshot/DarkFav.jpeg) |
+
+| Profile |
+|:---:|
+| ![Profile](screenshot/Profile%20detail.jpeg) |
+
+## Struktur Layar
+- **Home**: Daftar catatan dengan fitur pencarian dan toggle favorit.
+- **Settings**: Pengaturan tema dan urutan sortir.
+- **Favorites**: Koleksi catatan yang telah ditandai.
+- **Profile**: Informasi pengguna (Eka Putri Azhari Ritonga - 123140028).
+- **Add/Edit**: Form input catatan dengan dialog pemilihan waktu.
+
+## Teknologi yang Digunakan
+- **SQLDelight**: Manajemen database lokal.
+- **Jetpack DataStore**: Manajemen preferensi pengguna.
+- **Ktor Client**: Networking & API Sync (Bonus).
+- **Jetpack Compose**: UI Toolkit.
+- **Compose Navigation**: Navigasi antar layar.
+- **Material 3**: Standar desain terbaru.
 
 ---
-
-## 👤 Identitas Pengembang
-Eka Putri Azhari Ritonga (123140028)
+**Oleh:**
+- Eka Putri Azhari Ritonga (123140028)
