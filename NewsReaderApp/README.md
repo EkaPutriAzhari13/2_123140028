@@ -18,7 +18,7 @@ NewsReaderApp adalah aplikasi pembaca berita berbasis Android yang dikembangkan 
 - Arsitektur MVVM untuk menjaga struktur kode tetap rapi dan terorganisir.
 
 ## 🎥 Video Demonstrasi
-
+https://github.com/user-attachments/assets/9a7c574f-0376-4808-a384-4468cd494378
 
 ## 📸 Screenshots
 
