@@ -18,7 +18,7 @@ Proyek awal untuk mengenal komponen dasar di Jetpack Compose.
 - **Isi Proyek**: Tampilan profil sederhana dengan informasi statis.
 - **Fitur**: Menampilkan foto profil, nama, dan detail kontak dasar.
 
-### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4 )
+### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4)
 **Fokus: Modern UI (Glassmorphism) & MVVM**
 Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan yang jauh lebih niat dan rapi.
 - **Isi Proyek**: Implementasi desain **Glassmorphism** dengan latar belakang **Aurora Gradient**.
@@ -27,7 +27,7 @@ Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan ya
   - **Profile Strength**: Indikator (Progress Bar) yang menghitung seberapa lengkap saya mengisi data profil.
   - **Full Edit Mode**: Semua data profil (Bio, Email, HP, Lokasi) bisa diubah dan disimpan lewat ViewModel.
 
-### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5 )
+### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5)
 **Fokus: Navigation, State Management & CRUD**
 Pada tugas ini, saya mengembangkan aplikasi catatan dengan navigasi yang lebih kompleks serta pengelolaan data secara dinamis.
 - **Isi Proyek**: Aplikasi Notes dengan multi-screen menggunakan **Jetpack Compose Navigation**.
@@ -40,6 +40,20 @@ Pada tugas ini, saya mengembangkan aplikasi catatan dengan navigasi yang lebih k
     - Update → Edit catatan (`EditNoteScreen`)
   - **State Management**: Menggunakan `mutableStateListOf` untuk sinkronisasi data real-time
   - **UI Modern**: Material 3 dengan custom component, gradient, dan desain kartu estetik
+
+### 5. [NewsReaderApp](./NewsReaderApp) (Tugas Praktikum Minggu 6)
+**Fokus: Networking, Local Persistence (Room), & Repository Pattern**
+Aplikasi pembaca berita Indonesia yang mendukung fitur offline caching dan performansi UI yang halus.
+- **Isi Proyek**: Integrasi data dari API dan menyimpannya secara lokal untuk kapabilitas offline.
+- **Fitur Utama**: Offline Caching (Room DB), Shimmer Loading Effect, Chrome Custom Tabs, dan Dark Mode.
+- **Teknologi**: Jetpack Compose, Ktor Client (Networking), Room Database, Repository Pattern, Coil (Image Loading).
+
+### 6. [NotesAppNavigationV2](./NotesAppNavigationV2) (Tugas Praktikum Minggu 7)
+**Fokus: Local Database (SQLDelight), DataStore, & Advanced UI States**
+Versi lanjutan dari Notes App dengan persistensi data yang kuat dan fitur pencarian/sortir yang dioptimasi.
+- **Isi Proyek**: Upgrade aplikasi catatan menggunakan database *offline-first* dan manajemen preferensi yang lebih modern.
+- **Fitur Utama**: Offline-First dengan SQLDelight, Theme Persistence (DataStore), Real-time Search, Sortir catatan, dan Date/Time Picker.
+- **Teknologi**: SQLDelight (SQLite), Jetpack DataStore, Ktor Client (Sync), Material 3, MVVM Architecture.
 
 ---
 
