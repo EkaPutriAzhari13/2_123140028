@@ -1,72 +1,106 @@
-# Repository Tugas Pengembangan Aplikasi Mobile - Eka Putri 📱
+# 📱 Repository Tugas Pengembangan Aplikasi Mobile
 
-Repository ini saya gunakan untuk menyimpan seluruh progres tugas mata kuliah Pengembangan aplikasi Mobile. Di sini saya belajar membangun aplikasi Android menggunakan **Kotlin** dan **Jetpack Compose**, mulai dari logika dasar sampai desain UI yang lebih kompleks.
+Repository ini berisi kumpulan hasil pengerjaan tugas selama mengikuti mata kuliah **Pengembangan Aplikasi Mobile**. Setiap proyek merupakan bagian dari proses pembelajaran dalam membangun aplikasi Android menggunakan **Kotlin** dan **Jetpack Compose**, mulai dari konsep dasar hingga implementasi fitur yang lebih kompleks.
 
 ---
 
 ## 📂 Daftar Proyek
 
 ### 1. [NewsFeedSimulator](./NewsFeedSimulator) (Tugas 2)
-**Fokus: Logic & Asynchronous Programming**
-Di tugas ini, saya belajar cara mengelola aliran data (data stream) secara real-time.
-- **Isi Proyek**: Simulasi update berita otomatis menggunakan **Kotlin Flow** dan **Coroutines**.
-- **Fitur**: Ada filter kategori berita dan fitur penghitung berita yang sudah dibaca.
-
-### 2. [MyProfileApp](./MyProfileApp) (Tugas 3)
-**Fokus: Dasar UI Compose**
-Proyek awal untuk mengenal komponen dasar di Jetpack Compose.
-- **Isi Proyek**: Tampilan profil sederhana dengan informasi statis.
-- **Fitur**: Menampilkan foto profil, nama, dan detail kontak dasar.
-
-### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4)
-**Fokus: Modern UI (Glassmorphism) & MVVM**
-Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan yang jauh lebih niat dan rapi.
-- **Isi Proyek**: Implementasi desain **Glassmorphism** dengan latar belakang **Aurora Gradient**.
-- **Fitur Utama**: 
-  - **Dark Mode**: Switch tema manual yang mengubah seluruh suasana warna aplikasi.
-  - **Profile Strength**: Indikator (Progress Bar) yang menghitung seberapa lengkap saya mengisi data profil.
-  - **Full Edit Mode**: Semua data profil (Bio, Email, HP, Lokasi) bisa diubah dan disimpan lewat ViewModel.
-
-### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5)
-**Fokus: Navigation, State Management & CRUD**
-Pada tugas ini, saya mengembangkan aplikasi catatan dengan navigasi yang lebih kompleks serta pengelolaan data secara dinamis.
-- **Isi Proyek**: Aplikasi Notes dengan multi-screen menggunakan **Jetpack Compose Navigation**.
-- **Fitur Utama**:
-  - **Navigation System**: Menggunakan `Sealed Class` untuk routing yang terstruktur dan *type-safe*
-  - **Bottom Navigation**: Navigasi antar halaman (Home, Favorites, Profile) dengan *state preservation*
-  - **CRUD Notes**:
-    - Create → Menambah catatan (`AddNoteScreen`)
-    - Read → Menampilkan daftar & detail catatan (`NoteDetailScreen`)
-    - Update → Edit catatan (`EditNoteScreen`)
-  - **State Management**: Menggunakan `mutableStateListOf` untuk sinkronisasi data real-time
-  - **UI Modern**: Material 3 dengan custom component, gradient, dan desain kartu estetik
-
-### 5. [NewsReaderApp](./NewsReaderApp) (Tugas Praktikum Minggu 6)
-**Fokus: Networking, Local Persistence (Room), & Repository Pattern**
-Aplikasi pembaca berita Indonesia yang mendukung fitur offline caching dan performansi UI yang halus.
-- **Isi Proyek**: Integrasi data dari API dan menyimpannya secara lokal untuk kapabilitas offline.
-- **Fitur Utama**: Offline Caching (Room DB), Shimmer Loading Effect, Chrome Custom Tabs, dan Dark Mode.
-- **Teknologi**: Jetpack Compose, Ktor Client (Networking), Room Database, Repository Pattern, Coil (Image Loading).
-
-### 6. [NotesAppNavigationV2](./NotesAppNavigationV2) (Tugas Praktikum Minggu 7)
-**Fokus: Local Database (SQLDelight), DataStore, & Advanced UI States**
-Versi lanjutan dari Notes App dengan persistensi data yang kuat dan fitur pencarian/sortir yang dioptimasi.
-- **Isi Proyek**: Upgrade aplikasi catatan menggunakan database *offline-first* dan manajemen preferensi yang lebih modern.
-- **Fitur Utama**: Offline-First dengan SQLDelight, Theme Persistence (DataStore), Real-time Search, Sortir catatan, dan Date/Time Picker.
-- **Teknologi**: SQLDelight (SQLite), Jetpack DataStore, Ktor Client (Sync), Material 3, MVVM Architecture.
+**Fokus: Asynchronous Programming & Data Stream**  
+Proyek ini mensimulasikan aliran berita yang diperbarui secara berkala.
+- Menggunakan **Kotlin Flow** dan **Coroutines**
+- Filter kategori berita
+- Penghitung jumlah berita yang telah dibaca
 
 ---
 
-## ⚙️ Cara Menjalankan Tugas
-Kalau ingin mencoba menjalankan kodenya:
-1. Clone repo ini ke laptop.
-2. Buka salah satu folder tugas di atas (misalnya `MyProfileAppV2`) sebagai proyek utama di Android Studio.
-3. Pastikan Gradle sudah selesai sinkronisasi (Sync).
-4. Run di Emulator atau HP fisik (API 30+ disarankan).
+### 2. [MyProfileApp](./MyProfileApp) (Tugas 3)
+**Fokus: Dasar UI dengan Jetpack Compose**  
+Latihan awal dalam membangun antarmuka pengguna.
+- Menampilkan profil sederhana
+- Data statis seperti nama, foto, dan kontak
+
+---
+
+### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4)
+**Fokus: Modern UI & Arsitektur MVVM**  
+Pengembangan dari aplikasi profil dengan tampilan lebih modern.
+- Desain **Glassmorphism** dan **Aurora Gradient**
+- Fitur:
+  - Dark Mode
+  - Profile Strength Indicator
+  - Edit profil secara dinamis melalui ViewModel
+
+---
+
+### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5)
+**Fokus: Navigation & CRUD**  
+Aplikasi catatan dengan navigasi multi-halaman.
+- Menggunakan **Jetpack Compose Navigation**
+- CRUD (Create, Read, Update)
+- Bottom Navigation dengan state tersimpan
+- UI berbasis Material 3
+
+---
+
+### 5. [NewsReaderApp](./NewsReaderApp) (Tugas Praktikum Minggu 6)
+**Fokus: Networking & Local Database**  
+Aplikasi pembaca berita dengan dukungan offline.
+- Integrasi API menggunakan **Ktor Client**
+- Penyimpanan lokal dengan **Room Database**
+- Fitur:
+  - Offline caching
+  - Shimmer loading
+  - Chrome Custom Tabs
+  - Dark Mode
+
+---
+
+### 6. [NotesAppNavigationV2](./NotesAppNavigationV2) (Tugas Praktikum Minggu 7)
+**Fokus: Local Persistence & Preferences**  
+Pengembangan lanjutan aplikasi Notes dengan penyimpanan data yang lebih kuat.
+- Menggunakan **SQLDelight** (database)
+- **DataStore** untuk preferensi pengguna
+- Fitur:
+  - Offline-first system
+  - Pencarian dan sorting real-time
+  - Pengaturan tema
+  - Date & Time Picker
+
+---
+
+### 7. [NotesAppNavigationV3](./NotesAppNavigationV3) (Tugas Praktikum Minggu 8)
+**Fokus: Dependency Injection & Platform Integration**  
+Versi terbaru dari aplikasi Notes dengan penerapan Dependency Injection serta integrasi fitur berbasis platform.
+
+- Menggunakan **Koin** untuk mengelola dependency (ViewModel, Repository, Service)
+- Implementasi **expect/actual** untuk mendukung multiplatform
+- Fitur utama:
+  - **Device Info** → Menampilkan informasi perangkat
+  - **Network Status** → Indikator koneksi internet secara real-time
+  - **Battery Info (Bonus)** → Informasi kondisi baterai
+- Struktur aplikasi dibuat lebih modular dan scalable
+- Semua dependency terpusat dalam satu modul Koin
+
+---
+
+## ⚙️ Cara Menjalankan Project
+
+Langkah menjalankan salah satu proyek:
+1. Clone repository ini
+2. Buka folder proyek yang diinginkan di Android Studio
+3. Tunggu proses Gradle Sync hingga selesai
+4. Jalankan aplikasi pada emulator atau perangkat fisik (disarankan API 30+)
 
 ---
 
 ## 👤 Identitas Mahasiswa
-- **Nama**: Eka Putri Azhari Ritonga
-- **NIM**: 123140028
-- **Prodi**: Teknik Informatika - ITERA
+
+- **Nama**: Eka Putri Azhari Ritonga  
+- **NIM**: 123140028  
+- **Program Studi**: Teknik Informatika - ITERA  
+
+---
+
+✨ *Repository ini akan terus diperbarui seiring perkembangan pembelajaran.*
