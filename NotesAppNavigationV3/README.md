@@ -1,110 +1,109 @@
-# 📌 TUGAS PRAKTIKUM MINGGU 8 - Notes App Upgrade 🚀
+# 🚀 PRAKTIKUM MINGGU 8 - Enhancement Notes App
 
-Aplikasi Notes ini merupakan hasil pengembangan lanjutan dengan penambahan fitur berbasis platform serta penerapan **Dependency Injection (DI)** menggunakan **Koin**.
+Aplikasi Notes ini telah dikembangkan dengan menambahkan fitur berbasis platform serta menerapkan konsep **Dependency Injection (DI)** menggunakan **Koin** untuk pengelolaan dependensi yang lebih rapi.
 
 ---
 
-## 🏗️ Arsitektur Aplikasi
+## 🏛️ Desain Arsitektur
 
-Proyek ini menggunakan struktur modular dengan pemisahan layer yang jelas antara UI, logic, dan platform:
+Struktur aplikasi disusun secara modular untuk memisahkan tanggung jawab antar komponen seperti UI, data, dan layanan platform.
 
 ```mermaid
-graph TD
-    subgraph "UI Layer (Compose)"
-        MainScreen --> NoteListScreen
-        MainScreen --> SettingsScreen
-        NoteListScreen --> NetworkIndicatorUI
-        SettingsScreen --> DeviceInfoUI
+graph LR
+    subgraph Presentation Layer
+        MainUI --> ListUI
+        MainUI --> SettingUI
+        ListUI --> StatusNetworkUI
+        SettingUI --> InfoDeviceUI
     end
 
-    subgraph "Dependency Injection (Koin)"
-        AppModule[AppModule.kt]
+    subgraph DI Container
+        KoinModule[Koin Module]
     end
 
-    subgraph "Logic & Data Layer"
-        NoteViewModel --> NoteRepository
-        NoteRepository --> SQLDelight[(Database)]
-        NoteRepository --> DataStore[(Preferences)]
+    subgraph Core Layer
+        VM[NoteViewModel] --> Repo[NoteRepository]
+        Repo --> DB[(SQLDelight)]
+        Repo --> Pref[(DataStore)]
     end
 
-    subgraph "Platform Features (Expect/Actual)"
-        DeviceInfo[DeviceInfo Interface]
-        NetworkMonitor[NetworkMonitor Interface]
-        BatteryInfo[BatteryInfo - Bonus]
-        
-        AndroidImpl[Android Implementation]
+    subgraph Platform Layer
+        DevInfo[Device Info Service]
+        NetCheck[Network Service]
+        Batt[Battery Service]
+        AndroidSide[Android Impl]
     end
 
-    AppModule -.-> |Inject| NoteViewModel
-    AppModule -.-> |Inject| DeviceInfo
-    AppModule -.-> |Inject| NetworkMonitor
-    
-    NoteViewModel --> NetworkMonitor
-    SettingsScreen --> DeviceInfo
-    SettingsScreen --> BatteryInfo
+    KoinModule --> VM
+    KoinModule --> DevInfo
+    KoinModule --> NetCheck
+
+    VM --> NetCheck
+    SettingUI --> DevInfo
+    SettingUI --> Batt
 ```
 
 ---
 
-## 📝 Detail Implementasi
+## 📚 Penjelasan Fitur
 
-1. **Koin Dependency Injection**  
-   Koin digunakan untuk mengelola dan menyuntikkan dependency seperti Repository, ViewModel, dan layanan platform.
+1. **Implementasi Dependency Injection**  
+   Koin digunakan untuk mengatur dan menyediakan dependency antar komponen seperti ViewModel dan Repository.
 
-2. **DeviceInfo (expect/actual)**  
-   Digunakan untuk mengambil informasi perangkat dengan pendekatan multiplatform.
+2. **Informasi Perangkat (Device Info)**  
+   Menggunakan pendekatan *expect/actual* untuk mengambil data perangkat secara multiplatform.
 
-3. **NetworkMonitor (expect/actual)**  
-   Berfungsi untuk memantau status jaringan secara real-time menggunakan Flow.
+3. **Pemantauan Jaringan (Network Monitor)**  
+   Status koneksi diamati secara real-time menggunakan Flow.
 
-4. **UI Informasi Perangkat**  
-   Informasi device ditampilkan pada halaman Settings.
+4. **Tampilan Informasi Device**  
+   Detail perangkat ditampilkan pada halaman pengaturan (Settings).
 
-5. **Indikator Status Jaringan**  
-   Menampilkan kondisi Online/Offline pada halaman utama aplikasi.
+5. **Status Koneksi**  
+   Indikator Online/Offline ditampilkan pada halaman utama aplikasi.
 
-6. **Integrasi DI Menyeluruh**  
-   Seluruh dependency didefinisikan dalam modul Koin.
+6. **Manajemen Dependency Terpusat**  
+   Semua dependency dikelola dalam satu modul Koin agar lebih terstruktur.
 
 ---
 
-## ✅ Kriteria Penilaian
+## 📊 Penilaian
 
-| Komponen | Bobot | Keterangan |
+| Aspek | Persentase | Keterangan |
 | :--- | :---: | :--- |
-| **Koin DI Setup** | 25% | Sudah terimplementasi |
-| **expect/actual Pattern** | 25% | Digunakan pada DeviceInfo & NetworkMonitor |
-| **UI Integration** | 20% | Terhubung dengan baik |
-| **Architecture** | 20% | Struktur modular dan rapi |
-| **Code Quality** | 10% | Penulisan kode bersih |
-| **Bonus ⭐** | +10% | Implementasi BatteryInfo |
+| Dependency Injection | 25% | Sudah diterapkan dengan Koin |
+| Multiplatform Pattern | 25% | expect/actual digunakan |
+| Integrasi Antarmuka | 20% | UI berjalan dengan baik |
+| Struktur Arsitektur | 20% | Modular dan terorganisir |
+| Kualitas Kode | 10% | Bersih dan mudah dipahami |
+| Bonus ⭐ | +10% | Fitur Battery Info |
 
 ---
 
-## 📸 Tampilan Aplikasi
+## 🖼️ Preview Aplikasi
 
-| Home (Online) | Settings (Device & Battery) |
+| Halaman Utama (Online) | Menu Settings |
 | :---: | :---: |
-| ![Home Online](screenshot/Home+Online.jpg) | ![Device Info](screenshot/Setting%20+%20Battery%20Info.jpg) |
+| ![](screenshot/Home+Online.jpg) | ![](screenshot/Setting%20+%20Battery%20Info.jpg) |
 
-| Home (Offline) | Profile & Favorites |
+| Halaman Offline | Profil & Favorit |
 | :---: | :---: |
-| ![Home Offline](screenshot/Offline.jpg) | ![Profile](screenshot/Profile.jpg) |
+| ![](screenshot/Offline.jpg) | ![](screenshot/Profile.jpg) |
 
 ---
 
-## 🎥 Video Demo
+## 🎬 Demo Singkat
 
 Link video (±45 detik): [YouTube / Drive Link](URL_VIDEO_DEMO)  
-*(Menampilkan implementasi Koin DI, Device Info, Network Status, dan Battery Info)*
+*(Menampilkan fitur DI, info perangkat, status jaringan, dan battery info)*
 
 ---
 
-## 👤 Identitas Mahasiswa
+## 👤 Data Mahasiswa
 
-- **Nama**: Eka Putri Azhari R.
-- **NIM**: 123140028
-- **Branch**: `week-8`
+- Nama: Eka Putri Azhari R.  
+- NIM: 123140028  
+- Branch: `week-8`  
 
 ---
 
