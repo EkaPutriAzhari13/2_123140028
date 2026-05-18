@@ -4,63 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e9d041-fcd0-45a5-8eb6-77e637279249" name="Changes" comment="upgrade">
-      <change afterPath="$PROJECT_DIR$/1_123140028/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/.idea/1_123140028.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/kotlin/com/example/tugas1_123140028/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/kotlin/com/example/tugas1_123140028/Platform.android.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/androidMain/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/commonMain/composeResources/drawable/compose-multiplatform.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/commonMain/kotlin/com/example/tugas1_123140040/App.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/commonMain/kotlin/com/example/tugas1_123140040/Greeting.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/commonMain/kotlin/com/example/tugas1_123140040/Platform.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/commonTest/kotlin/com/example/tugas1_123140040/ComposeAppCommonTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/iosMain/kotlin/com/example/tugas1_123140040/MainViewController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/iosMain/kotlin/com/example/tugas1_123140040/Platform.ios.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/jvmMain/kotlin/com/example/tugas1_123140040/Platform.jvm.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/composeApp/src/jvmMain/kotlin/com/example/tugas1_123140040/main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/Configuration/Config.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/Assets.xcassets/AccentColor.colorset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/app-icon-1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/Assets.xcassets/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/ContentView.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/Preview Content/Preview Assets.xcassets/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/iosApp/iosApp/iOSApp.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_123140028/1_123140028/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e5e9d041-fcd0-45a5-8eb6-77e637279249" name="Changes" comment="upgrade" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

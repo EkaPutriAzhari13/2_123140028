@@ -6,40 +6,65 @@ Repository ini saya gunakan untuk menyimpan seluruh progres tugas mata kuliah Pe
 
 ## 📂 Daftar Proyek
 
-### 1. [NewsFeedSimulator](./NewsFeedSimulator) (Tugas 2)
-**Fokus: Logic & Asynchronous Programming**
-Di tugas ini, saya belajar cara mengelola aliran data (data stream) secara real-time.
-- **Isi Proyek**: Simulasi update berita otomatis menggunakan **Kotlin Flow** dan **Coroutines**.
-- **Fitur**: Ada filter kategori berita dan fitur penghitung berita yang sudah dibaca.
+### 1. [1_123140028](./1_123140028) (Tugas 1)
+**Topik: Pengenalan Kotlin Multiplatform**
+Proyek awal untuk mengenal dasar-dasar pengembangan lintas platform menggunakan Kotlin Multiplatform.
+- **Fitur**: Konfigurasi dasar project KMP dan implementasi UI sederhana.
+- **Teknologi**: Kotlin Multiplatform (KMP), Compose Multiplatform.
 
-### 2. [MyProfileApp](./MyProfileApp) (Tugas 3)
-**Fokus: Dasar UI Compose**
-Proyek awal untuk mengenal komponen dasar di Jetpack Compose.
-- **Isi Proyek**: Tampilan profil sederhana dengan informasi statis.
-- **Fitur**: Menampilkan foto profil, nama, dan detail kontak dasar.
+### 2. [NewsFeedSimulator](./NewsFeedSimulator) (Tugas 2)
+**Topik: Advanced Kotlin, Coroutines, dan Flow**
+Aplikasi simulasi berita yang mendemonstrasikan pengolahan data asinkron secara real-time.
+- **Fitur**: Stream berita otomatis, Filter kategori dinamis (Tech, Sports, Finance), dan Counter berita yang dibaca.
+- **Teknologi**: Kotlin Flow (StateFlow), Coroutines (viewModelScope), MVVM Architecture, Jetpack Compose.
 
-### 3. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4 )
-**Fokus: Modern UI (Glassmorphism) & MVVM**
-Ini adalah versi pengembangan dari aplikasi profil sebelumnya dengan tampilan yang jauh lebih niat dan rapi.
-- **Isi Proyek**: Implementasi desain **Glassmorphism** dengan latar belakang **Aurora Gradient**.
-- **Fitur Utama**: 
-  - **Dark Mode**: Switch tema manual yang mengubah seluruh suasana warna aplikasi.
-  - **Profile Strength**: Indikator (Progress Bar) yang menghitung seberapa lengkap saya mengisi data profil.
-  - **Full Edit Mode**: Semua data profil (Bio, Email, HP, Lokasi) bisa diubah dan disimpan lewat ViewModel.
+### 3. [MyProfileApp](./MyProfileApp) (Tugas 3)
+**Topik: Compose Multiplatform Basics**
+Aplikasi profil pribadi sederhana yang dibangun menggunakan framework Compose Multiplatform.
+- **Fitur**: Menampilkan informasi profil, foto, and integrasi UI dasar.
+- **Teknologi**: Compose Multiplatform, Kotlin, Material Design 3.
 
-### 4. [NotesAppNavigation](./NotesAppNavigation) (Tugas 5 )
-**Fokus: Navigation, State Management & CRUD**
-Pada tugas ini, saya mengembangkan aplikasi catatan dengan navigasi yang lebih kompleks serta pengelolaan data secara dinamis.
-- **Isi Proyek**: Aplikasi Notes dengan multi-screen menggunakan **Jetpack Compose Navigation**.
-- **Fitur Utama**:
-  - **Navigation System**: Menggunakan `Sealed Class` untuk routing yang terstruktur dan *type-safe*
-  - **Bottom Navigation**: Navigasi antar halaman (Home, Favorites, Profile) dengan *state preservation*
-  - **CRUD Notes**:
-    - Create → Menambah catatan (`AddNoteScreen`)
-    - Read → Menampilkan daftar & detail catatan (`NoteDetailScreen`)
-    - Update → Edit catatan (`EditNoteScreen`)
-  - **State Management**: Menggunakan `mutableStateListOf` untuk sinkronisasi data real-time
-  - **UI Modern**: Material 3 dengan custom component, gradient, dan desain kartu estetik
+### 4. [MyProfileAppV2](./MyProfileAppV2) (Tugas 4)
+**Topik: State Management dan MVVM**
+Pengembangan aplikasi profil dengan manajemen state yang lebih terstruktur.
+- **Fitur**: Manajemen data profil menggunakan ViewModel, sinkronisasi state antar komponen UI, dan implementasi arsitektur MVVM yang bersih.
+- **Teknologi**: Jetpack Compose, ViewModel, StateFlow/LiveData, Material Design 3.
+
+### 5. [NotesAppNavigation](./NotesAppNavigation) (Latihan dan Tugas Praktikum Minggu 5)
+**Topik: Jetpack Compose Navigation & State Management**
+Aplikasi catatan (Notes App) yang mendemonstrasikan sistem navigasi yang kompleks dan pengelolaan data dinamis (CRUD sederhana).
+- **Fitur**: Bottom Navigation, Dynamic Arguments, Create/Read/Update/Delete catatan, dan fitur Favorites.
+- **Teknologi**: Jetpack Compose Navigation, State Management (mutableStateListOf), Material Design 3.
+
+### 6. [NewsReaderApp](./NewsReaderApp) (Tugas Praktikum Minggu 6)
+**Topik: Networking, Local Persistence (Room), dan Repository Pattern**
+Aplikasi pembaca berita Indonesia yang mendukung fitur offline caching dan performansi UI yang halus.
+- **Fitur**: Offline Caching (Room DB), Shimmer Loading Effect, Chrome Custom Tabs, dan Dark Mode.
+- **Teknologi**: Jetpack Compose, Ktor Client (Networking), Room Database, Repository Pattern, Coil (Image Loading).
+
+### 7. [NotesAppNavigationV2](./NotesAppNavigationV2) (Tugas Praktikum Minggu 7)
+**Topik: Local Database (SQLDelight), DataStore, & Advanced UI States**
+Versi lanjutan dari Notes App dengan persistensi data yang kuat dan fitur pencarian/sortir yang dioptimasi.
+- **Fitur**: Offline-First dengan SQLDelight, Theme Persistence (DataStore), Real-time Search, Sortir catatan, dan Date/Time Picker.
+- **Teknologi**: SQLDelight (SQLite), Jetpack DataStore, Ktor Client (Sync), Material 3, MVVM Architecture.
+
+### 8. [NotesAppNavigationV3](./NotesAppNavigationV3) (Tugas Praktikum Minggu 8)
+**Topik: Dependency Injection (Koin) & Platform Specific (Expect/Actual)**
+Upgrade besar pada Notes App dengan implementasi arsitektur yang modular dan fitur hardware-aware.
+- **Fitur**: Koin DI Setup, Network Monitoring (Online/Offline indicator), Device Info & Battery Status (Expect/Actual pattern).
+- **Teknologi**: Koin DI, Expect/Actual Pattern, SQLDelight, DataStore, Jetpack Compose.
+
+### 9. [PAM123140028WEEK9](./PAM123140028WEEK9) (Tugas Praktikum Minggu 9)
+**Topik: AI Integration (Gemini) & Kotlin Multiplatform (KMP)**
+Aplikasi catatan cerdas "MY NOTES" yang mengintegrasikan kecerdasan buatan untuk fitur produktivitas tingkat lanjut.
+- **Fitur**: AI Translation (Gemini API), CRUD Catatan, Favorites, Reminder, Real-time Connectivity & Battery Status.
+- **Teknologi**: Gemini AI SDK, Kotlin Multiplatform, SQLDelight, Koin DI, Ktor, Compose Multiplatform.
+
+### 10. [Testing dan Dependency Injection](./Testing%20dan%20Dependency%20Injection) (Tugas Praktikum Minggu 10)
+**Topik: Testing & Dependency Injection (Koin)**
+Aplikasi "NoteApp" yang mengimplementasikan standar arsitektur modern dengan pengujian otomatis (Unit Testing & UI Testing).
+- **Fitur**: Automated Testing (MockK & Compose Test Rule), Koin DI, SQLDelight, dan Real-time Device Monitoring.
+- **Teknologi**: Koin DI, SQLDelight, MockK, Jetpack Compose Testing, StateFlow.
 
 ---
 
