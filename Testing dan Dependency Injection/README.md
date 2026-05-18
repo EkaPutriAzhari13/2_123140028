@@ -60,6 +60,7 @@ graph TD
 ---
 ## Video Demo
 https://github.com/user-attachments/assets/2bc79fa2-b85d-4b21-9f8d-3afb97cbc94e
+
 ---
 **Identitas Mahasiswa:**
 - **Nama**: Eka Putri Azhari Ritonga
