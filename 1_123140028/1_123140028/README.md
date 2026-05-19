@@ -16,10 +16,10 @@ Fitur yang ditampilkan pada aplikasi ini meliputi:
 Berikut adalah hasil running aplikasi pada masing-masing platform:
 
 ### Desktop
-<img width="1919" height="1192" alt="Screenshot Desktop" src="https://github.com/user-attachments/assets/5bc5d42a-e48b-45ea-aa29-a4a22c823896" />
+<img  />
 
 ### Android
-<img width="1080" height="2400" alt="Screenshot Android" src="https://github.com/user-attachments/assets/40ed487e-5097-4394-bb0d-aadddeae902e" />
+<img  />
 
 ---
 
